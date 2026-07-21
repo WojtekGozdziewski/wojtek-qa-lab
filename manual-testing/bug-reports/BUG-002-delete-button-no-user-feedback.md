@@ -1,4 +1,4 @@
-# BUG-003: Delete action provides no user feedback
+# BUG-002: Delete action provides no user feedback
 
 ## Application
 
