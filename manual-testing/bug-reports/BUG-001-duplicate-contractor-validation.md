@@ -39,12 +39,13 @@ The validation is based only on the contractor name.
 
 ## Expected result
 
-The system should allow creating different contractors with identical names.
+The system should allow creation of different contractors with identical names if they represent different business entities.
 
-Duplicate validation should use unique business identifiers, for example:
-- Tax identification number (NIP)
-- Internal contractor ID
-- Other unique business identifier
+Duplicate validation should not be based only on the contractor name field.
+
+The system should use appropriate unique identifiers to detect possible duplicates. For business entities, available identifiers such as NIP should be considered during validation.
+
+If a possible duplicate is detected, the system should provide a clear warning allowing the user to verify whether the records represent the same contractor.
 
 ## Business impact
 
